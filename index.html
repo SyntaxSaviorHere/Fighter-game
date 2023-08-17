@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Samurai game</title>
+  </head>
+  <body>
+    <div class="modal2">
+      <button id="start-game-button">start Game</button>
+    </div>
+    <header>
+      <h1>Enjoy!</h1>
+    </header>
+    <main>
+      <div class="all">
+        <div class="container">
+          <div class="player">
+            <div id="player-health" class="player-health"></div>
+          </div>
+          <div class="timer">10</div>
+          <div class="enemy">
+            <div id="enemy-health" class="enemy-health"></div>
+          </div>
+        </div>
+        <div id="displayText" class="modal">Tie</div>
+        <canvas></canvas>
+      </div>
+    </main>
+
+    <audio id="audio" loop>
+      <source
+        src="/assets/audio/japan-koto-folk-background-music-124876.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="attack-1">
+      <source src="assets/sounds/sound1.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="attack-2">
+      <source src="assets/sounds/sound2.mp3" type="audio/mpeg" />
+    </audio>
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
